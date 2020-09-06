@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>S1-HOMEWORK</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <div class="container-fluid">
+        <form>
+          Enter a:<input ng-model="a" type="number">
+          <br>
+          Enter b:<input ng-model="b" type="number">
+        </form>
+        <hr>
+
+        <div>
+          Value of a is: {{a}}
+        </div>
+        <div>
+          Value of b is: {{b}}
+        </div>
+        <hr>
+
+        {{a}} + {{b}} == {{a + b}} <br>
+        {{a}} - {{b}} == {{a - b}} <br>
+        {{a}} * {{b}} == {{a * b}} <br>
+        {{a}} / {{b}} == {{a / b}} <br>
+        {{a}} % {{b}} == {{a % b}} <br>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-sm-8">
+            <h4 class="text-center">Multiplication table of a</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <h5>using ng-repeat</h5>
+            <div ng-repeat="i in [1,2,3,4,5,6,7,8,9]">
+              {{a}} * {{i}} == {{a * i}}
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <h5>hard-coded</h5>
+            {{a}} * 1 = {{a * 1}} <br>
+            {{a}} * 2 = {{a * 2}} <br>
+            {{a}} * 3 = {{a * 3}} <br>
+            {{a}} * 4 = {{a * 4}} <br>
+            {{a}} * 5 = {{a * 5}} <br>
+            {{a}} * 6 = {{a * 6}} <br>
+            {{a}} * 7 = {{a * 7}} <br>
+            {{a}} * 8 = {{a * 8}} <br>
+            {{a}} * 9 = {{a * 9}} <br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script\myApp.js"></script>
+    <script src="script\myCtrl.js"></script>
+  </body>
+</html>
