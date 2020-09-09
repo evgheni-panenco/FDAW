@@ -3,26 +3,25 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <body>
 
-<div ng-app="myApp" ng-controller="arrCtrl">
+  <div ng-app="myApp" ng-controller="arrCtrl">
+    <ul>
+      <li ng-repeat="x in students | filter : {'grade' : 9}">
+        {{(x.lastName) + " " + (x.firstName | limitTo : 1) + ". " + x.grade}}
+      </li>
+    </ul>
+  </div>
 
-<ul>
-
-<li ng-repeat="x in students | filter : {'grade' : 8}">{{x.name + ", " + x.grade}}</li>
-</ul>
-
-</div>
-
-<script>
-var app = angular.module('myApp', []);
-app.controller('arrCtrl', function($scope) {
-    $scope.students = [
-        {"name" : "Student1", "grade" : "9"},
-        {"name" : "Student2", "grade" : "8"},
-        {"name" : "Student3", "grade" : "7"},
-        {"name" : "Student4", "grade" : "6"}
-    ];
-});
-</script>
+  <script>
+  var app = angular.module('myApp', []);
+  app.controller('arrCtrl', function($scope) {
+      $scope.students = [
+          {"firstName" : "Evgheni", "lastName" : "Panenco", "grade" : "9"},
+          {"firstName" : "Alan", "lastName" : "Pedro", "grade" : "8"},
+          {"firstName" : "John", "lastName" : "Doe", "grade" : "7"},
+          {"firstName" : "Alice", "lastName" : "Public", "grade" : "6"}
+      ];
+  });
+  </script>
 
 </body>
 </html>
