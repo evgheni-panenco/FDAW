@@ -13,6 +13,12 @@
         {{(x.lastName) + " " + (x.firstName | limitTo : 1) + ". " + x.grade}}
       </li>
     </ul>
+
+    <p>Please select the student:</p>
+    <select ng-model="selectedStudent">
+      <option ng-repeat="x in students">{{(x.lastName) + " " + (x.firstName | limitTo : 1) + ". "}}</option>
+    </select>
+    <p>Selected student: {{selectedStudent}}</p>
   </div>
 
   <script>

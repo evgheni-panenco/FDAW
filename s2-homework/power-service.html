@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body>
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+
+    <p>Result of equation power(2, 3) = {{pow}}</p>
+
+    </div>
+
+    <script>
+    var app = angular.module('myApp', []);
+
+    app.service('power', function() {
+        this.myFunc = function (x, y) {
+            return Math.pow(2, 3);
+        }
+    });
+    app.controller('myCtrl', function($scope, power) {
+      $scope.pow = power.myFunc(2, 3);
+    });
+    </script>
+
+  </body>
+</html>
