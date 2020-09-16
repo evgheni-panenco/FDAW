@@ -10,27 +10,55 @@
   <div ng-app="myApp" ng-controller="myCtrl">
 
     <form>
-      <div ng-hide="hide">Login: <input type="text" ng-model="login"></div>
-      <div ng-hide="hide">Password: <input type="text" ng-model="password"></div>
+      Login: <input type="text" ng-model="login" ng-disabled="disableFormInput"> <br>
+      Password: <input type="text" ng-model="password" ng-disabled="disableFormInput"> <br>
       <button ng-click="sign_in()">Sign in</button>
     </form>
 
-    <div ng-show="{{succesSignIn}}">Hello my friend!</div>
+    <div ng-show="showResult">
+      {{resultMessage}}
+    </div>
 
   </div>
 
   <script>
   var app = angular.module('myApp', []);
   app.controller('myCtrl', function($scope) {
+      $scope.disableFormInput = false;
+      $scope.successfullUserAuth = false;
+      $scope.showResult = false;
+      $scope.hide = false;
+      $scope.resultMessage = "";
+
+      $scope.login = "";
+      $scope.password = "";
+
       $scope.users = [
-          {login : "admin", password : "admin"}
+          {login : "admin", password : "admin"},
+          {login : "root", password : "root"}
       ];
 
-      $scope.hide = false;
-      $scope.succesSignIn = false;
-
       $scope.sign_in = function() {
-        $scope.hide = true;
+        $scope.showResult = true;
+        $scope.successfullUserAuth = false;
+
+        for (var i = 0; i < $scope.users.length; i++) {
+          if ($scope.users[i].login === $scope.login) {
+            if ($scope.users[i].password === $scope.password) {
+              $scope.successfullUserAuth = true;
+              break;
+            }
+          }
+         }
+
+         if ($scope.successfullUserAuth) {
+            $scope.resultMessage = "You're welcome " + $scope.login;
+         } else {
+            $scope.disableFormInput = true;
+            $scope.resultMessage = "Auth. fail! Inputs has been disabled!";
+         }
+
+
       };
   });
   </script>
