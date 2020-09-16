@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<title>TASK 1.1</title>
+<body>
+
+  <div ng-app="myApp" ng-controller="arrCtrl" ng-init=".*">
+    Please enter last name for search: <br>
+    <input type="text" ng-model="searchedLastName"> <br>
+
+    <ul>
+      <li ng-repeat="x in students | filter : searchedLastName">
+        {{(x.lastName) + " " + (x.firstName | limitTo : 1) + ". " + x.grade}}
+      </li>
+    </ul>
+
+  </div>
+  <script>
+  var app = angular.module('myApp', []);
+  app.controller('arrCtrl', function($scope) {
+      $scope.students = [
+          {"firstName" : "Evgheni", "lastName" : "Panenco", "grade" : 10},
+          {"firstName" : "Alan", "lastName" : "Pedro", "grade" : 8},
+          {"firstName" : "John", "lastName" : "Doe", "grade" : 7},
+          {"firstName" : "Alice", "lastName" : "Public", "grade" : 10},
+          {"firstName" : "Malic", "lastName" : "Public", "grade" : 8},
+          {"firstName" : "Mustafa", "lastName" : "Publad", "grade" : 9}
+      ];
+  });
+  </script>
+
+</body>
+</html>

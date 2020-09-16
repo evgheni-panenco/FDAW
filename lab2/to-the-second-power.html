@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<title>TASK 1.2</title>
+<body>
+
+<div ng-app="myApp" ng-init="x=1;">
+Raise the number X to the second power <br>
+Please enter X value: <input type="number" ng-model="x" ng-init="x=1">
+
+<h1>{{x | myPow}}</h1>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.service('power2', function() {
+    this.myFunc = function (x) {
+        return Math.pow(x, 2);
+    }
+});
+
+app.filter('myPow',['power2', function(power2) {
+    return function(x) {
+        return power2.myFunc(x);
+    };
+}]);
+
+</script>
+
+</body>
+</html>

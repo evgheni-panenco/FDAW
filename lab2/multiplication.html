@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<title>TASK 2.1</title>
+<body>
+
+  <div ng-app="myApp" ng-controller="MultiplicationController">
+
+    A <input type="number" ng-model="a"> <br>
+    B <input type="number" ng-model="b"> <br>
+
+    <button ng-click="multiplication()">Calculate!!!</button>
+
+    <div ng-show="isVisible">
+      {{resultMessage}}
+    </div>
+
+  </div>
+
+  <script>
+  var app = angular.module('myApp', []);
+  app.controller('MultiplicationController', function($scope) {
+    $scope.a = 1;
+    $scope.b = 1;
+    $scope.isVisible = false;
+    $scope.resultMessage = "";
+
+    $scope.multiplication = function() {
+      a = $scope.a;
+      b = $scope.b;
+      $scope.isVisible = true;
+
+      $scope.resultMessage = a + " * " + b + " == " + (a * b);
+    }
+  });
+  </script>
+
+</body>
+</html>

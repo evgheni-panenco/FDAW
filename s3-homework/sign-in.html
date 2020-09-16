@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Sign In</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body>
+
+  <div ng-app="myApp" ng-controller="myCtrl">
+
+    <form>
+      <div ng-hide="hide">Login: <input type="text" ng-model="login"></div>
+      <div ng-hide="hide">Password: <input type="text" ng-model="password"></div>
+      <button ng-click="sign_in()">Sign in</button>
+    </form>
+
+    <div ng-show="{{succesSignIn}}">Hello my friend!</div>
+
+  </div>
+
+  <script>
+  var app = angular.module('myApp', []);
+  app.controller('myCtrl', function($scope) {
+      $scope.users = [
+          {login : "admin", password : "admin"}
+      ];
+
+      $scope.hide = false;
+      $scope.succesSignIn = false;
+
+      $scope.sign_in = function() {
+        $scope.hide = true;
+      };
+  });
+  </script>
+
+  </body>
+</html>

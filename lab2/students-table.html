@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<title>TASK 2.3-4</title>
+<body>
+
+  <div ng-app="myApp" ng-controller="arrCtrl">
+    <table class="table table-bordered col-sm-8">
+      <th scope="col">First name</th>
+      <th scope="col">Last name</th>
+      <th scope="col">Grade</th>
+      <tr ng-repeat="x in students | orderBy : 'grade' : true">
+        <td>{{x.firstName}}</td>
+        <td>{{x.lastName}}</td>
+        <td>{{x.grade}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+  var app = angular.module('myApp', []);
+  app.controller('arrCtrl', function($scope) {
+      $scope.students = [
+        {"firstName" : "Evgheni", "lastName" : "Panenco", "grade" : 10},
+        {"firstName" : "Alan", "lastName" : "Pedro", "grade" : 8},
+        {"firstName" : "John", "lastName" : "Doe", "grade" : 7},
+        {"firstName" : "Alice", "lastName" : "Public", "grade" : 10},
+        {"firstName" : "Malic", "lastName" : "Public", "grade" : 8},
+        {"firstName" : "Mustafa", "lastName" : "Publad", "grade" : 9}
+      ];
+  });
+  </script>
+
+</body>
+</html>
