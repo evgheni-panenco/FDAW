@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>S4-HOMEWORK</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+
+    <div ng-app="">
+        <div class="container">
+            <h3>Форма устройства на работу</h3> <br>
+            <form class="form-group">
+                Фамиллия: <input class="form-control" type="text" ng-model="lastName"> <br>
+                Имя: <input class="form-control" type="text" ng-model="firstName"> <br>
+                Дата рождения: <input class="form-control" type="date" ng-model="birthDate"> <br>
+                Факультет:
+                <div class="form-check">
+                    <input class="form-check-input" value="Химия" type="radio" id="radio1" name="facultyname" ng-model="faculty">
+                    <label class="form-check-label" for="radio1">Химия</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" value="Информатика " type="radio" id="radio2" name="facultyname" ng-model="faculty">
+                    <label class="form-check-label" for="radio2">Информатика</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" value="Математика" type="radio" id="radio3" name="facultyname" ng-model="faculty">
+                    <label class="form-check-label" for="radio3">Математика</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" value="Биология" type="radio" id="radio4" name="facultyname" ng-model="faculty">
+                    <label class="form-check-label" for="radio4">Биология</label>
+                </div> <br>
+                Предмет:
+                <div class="col-auto my-1">
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" ng-model="subject">
+                        <option value="Органическая химия">Органическая химия</option>
+                        <option value="Экономика">Экономика</option>
+                        <option value="Математика">Математика</option>
+                    </select>
+                </div> <br>
+                Ожидаемая зарплата:
+                <input class="form-input" type="number" ng-model="expectedSalary"> <br>
+
+                <div ng-if="expectedSalary <= 3000">
+                    <span class="text-danger">Вы себя недооцениваете</span> <br>
+                </div>
+                <div ng-if="expectedSalary >= 10000">
+                    <span class="text-danger">Преувиличиваете</span> <br>
+                </div>
+
+                <br>
+                <button ng-init="isSubmit=false;" ng-click="isSubmit=true;" ng-disabled="expectedSalary >= 10000" class="btn btn-primary">Согласен</button>
+                <button class="btn btn-danger">Отказ</button>
+            </form>
+            
+
+            <div ng-if="isSubmit">
+                <h3>Введённая информация</h3>
+                Фамиллия: {{lastName}} <br>
+                Имя: {{firstName}} <br>
+                Дата рождения: {{birthDate | date}} <br>
+                Факультет: {{faculty}} <br>
+                Предмет: {{subject}} <br>
+                Ожидаемая зарплата: {{expectedSalary}} <br>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
