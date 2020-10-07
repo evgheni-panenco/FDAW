@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Samsung MD | Official Store </title>
+    <link rel="shortcut icon" href="resources/images/logos/logo-small.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header with logo and links -->
+    <header>
+        <div class="wrapper container">
+            <nav class="navbar navbar-expand-lg row">
+                <a class="navbar-brand col-xs-2" href="index.html">
+                    <img width="170px" height="60px" class="img-responsive"
+                        src="resources/images/logos/samsung-logo.png" alt="Samsung store logo">
+                </a>
+
+                <div class="collapse navbar-collapse col-xs-10 justify-content-end">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="smartphones.html">Smartphones</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TV</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Refrigerators</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <hr class="horizontal">
+
+    <h1 class="text-center text-uppercase font-weight-bold">Smartphones</h1>
+    <div class="container" ng-app="myApp" ng-controller="productsCtrl" ng-init="orderByPrice=true">
+        
+        <div class="row">
+            <button ng-click="orderByPrice = !orderByPrice">Order by price</button>
+        </div>
+
+        <div class="row">
+            <div ng-repeat="item in smartphones | orderBy : 'price' : orderByPrice | filter : 'Galaxy A'">
+                <div class="card" style="width:200px; padding-top: 20px; margin: 10px;">
+                    <img class="card-img-top" src="{{item.image}}" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-size: 20px;">{{item.title}}</h4>
+                        <p class="card-text">{{item.price | currency : "MDL "}}</p>
+                        <a href="#" class="btn btn-info">More details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- our contacts -->
+    <div class="container">
+        <h3 class="text-center text-uppercase font-weight-bold mt-5 mb-5">Our contacts</h3>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.9697068057494!2d28.834707715714263!3d47.021199636225596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c30e4b9e8dd%3A0x3201481ec30a17cf!2sStefan%20cel%20Mare%20si%20Sfant%20Boulevard%2077%2C%20Chi%C8%99in%C4%83u%202012%2C%20Moldova!5e0!3m2!1sen!2s!4v1601135512065!5m2!1sen!2s"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+
+            <div class="col-sm-4" id="contact2">
+                <h3>Contacts</h3>
+                <hr align="left" width="50%">
+                <h4 class="pt-2">Address</h4>
+                <i class="fa fa-globe" style="color:#000"></i> Stefan cel Mare si Sfant Boulevard 77<br>
+                <h4 class="pt-2">Contatti</h4>
+                <i class="fa fa-phone" style="color:#000"></i> <a href="tel:+"> +373 79 999988 </a><br>
+                <i class="fa fa-whatsapp" style="color:#000"></i><a href="tel:+"> +373 68 000088 </a><br>
+                <h4 class="pt-2">Email</h4>
+                <i class="fa fa-envelope" style="color:#000"></i> <a href="">moldova@samsung.com</a><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with social media links and copyright -->
+    <footer class="page-footer font-small special-color-dark pt-4 bg-white mt-5">
+        <div class="container">
+
+            <ul class="list-unstyled list-inline text-center">
+                <hr>
+                <h3 class="text-uppercase mb-4">Follow us</h3>
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/SamsungUS" class="btn-floating btn-fb mx-1">
+                        <i class="fa fa-facebook"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://twitter.com/SamsungUS" class="btn-floating btn-tw mx-1">
+                        <i class="fa fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.youtube.com/samsungus" class="btn-floating btn-gplus mx-1">
+                        <i class="fa fa-youtube"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/samsungmobileusa/" class="btn-floating btn-li mx-1">
+                        <i class="fa fa-instagram"> </i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="index.html"> Moldova Samsung</a>
+        </div>
+    </footer>
+
+    <script src="js/myApp.js"></script>
+    <script src="js/productsCtrl.js"></script>
+</body>
+
+</html>
