@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Samsung MD | Official Store</title>
+    <title>Samsung MD | Official Store </title>
     <link rel="shortcut icon" href="resources/images/logos/logo-small.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body ng-app="myApp" ng-controller="productsCtrl" >
+<body>
     <!-- header with logo and links -->
     <header>
         <div class="wrapper container">
@@ -44,17 +44,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="question.html">Q&A</a>
                         </li>
-                        
-                        <li class="nav-item" ng-show="isSignIn == false">
-                            <button class="btn btn-dark" id="myBtn">Sign in</button>
-                        </li>
-                        <li style="margin-right: 10px;" class="nav-item" ng-show="isSignIn == true">
-                            <button class="btn btn-success">Welcome, {{login | uppercase}}</button>
-                        </li>
-
-                        <li class="nav-item" ng-show="isSignIn == true">
-                            <button ng-click="isSignIn = false" class="btn btn-danger">Exit</button>
-                        </li>
                     </ul>
                 </div>
             </nav>
@@ -63,52 +52,65 @@
 
     <hr class="horizontal">
 
-    <h1 class="text-center text-uppercase font-weight-bold">Smartphones</h1>
+    <div class="container" ng-app="myApp" ng-controller="questionCtrl" ng-init="showNoBtn=true; showAnswer=false; showForm=true;">
 
+        <h3 class="text-center text-uppercase font-weight-bold mt-5 mb-5">ASK YOUR QUESTION</h3>
 
-    <div class="container" ng-init="orderByPrice=true">
-        <button ng-click="addNewSmartphone()" ng-show="isSignIn == true" class="btn btn-success btn-block">Add new smartphone</button> <br>
+            <form name="myForm" novalidate ng-submit="showAnswer=true;">
+            
+                <p>Your name:<br>
+                    <input class="form-control" type="text" name="user" ng-model="username" required>
+                    <span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+                        <span ng-show="myForm.user.$error.required">Username is required.</span>
+                    </span>
+                </p>
+            
+                <p>Email:<br>
+                    <input class="form-control" type="email" name="email" ng-model="email" required>
+                    <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                        <span ng-show="myForm.email.$error.required">Email is required.</span>
+                        <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+                    </span>
+                </p>
 
-        <h3>Filters</h3>
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon3">Search</span>
-            </div>
-            <input class="form-control" type="text" ng-model="search">
-        </div> <br>
-        <button class="btn btn-light" ng-click="orderByMe('price')">Order by price</button>
-        <button class="btn btn-light" ng-click="orderByMe('title')">Order by name</button>
-
-        <span class="font-weight-bold">Price:</span>
-        <input type="number" id="minValue" ng-model="minValue" placeholder="From"> -
-        <input type="number" id="maxValue" ng-model="maxValue" placeholder="To">
-        <button class="btn btn-danger" ng-click="resetFilters()">Reset filters</button>
-
-        <div class="row">
-            <div ng-repeat="item in smartphones | filter : search | orderBy : myOrderBy : myReverseBy | filter : myFilter">
-                <div class="card" style="width:250px; padding-top: 20px; margin: 10px;">
-                    <img class="card-img-top" src="{{item.image}}" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <!-- <h4 class="card-title" style="font-size: 20px;">{{item.title}}</h4>
-                        <p class="card-text">{{item.price | currency : "MDL "}}</p> -->
-
-                        <input ng-disabled="editing == false" class="form-control btn-editing" type="text" ng-model="item.title">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text btn-editing">MDL</span>
-                            </div>
-                            <input ng-disabled="editing == false" class="form-control btn-editing" type="number" ng-model="item.price">
-                        </div>
-
-                        <a href="#" class="btn btn-info btn-block">More details</a>
-
-                        <a ng-click="editing = !editing" ng-show="isSignIn == true && editing == false" href="#" class="btn btn-warning btn-block"> Edit</a>
-
-                        <a ng-click="editing = !editing" ng-show="isSignIn == true && editing == true" href="#" class="btn btn-success btn-block"> Save</a>
-                        <a ng-click="removeProduct(item.title)" ng-show="isSignIn == true" href="#" class="btn btn-danger btn-block"> Delete</a>
-                    </div>
+                <p>Age: <br>
+                    <input class="form-control" type="number" ng-model="userAge" ng-init="userAge=0;">
+                    <span class="text-info small">{{userAge | myFilterAge}}</span>
+                </p>
+                
+                <p>Choose the question type:</p>
+                <select class="form-control" ng-model="qType">
+                    <option ng-repeat="x in typeOfQuestions">{{x}}</option>
+                </select> <br>
+            
+                <p>Describe your problem:</p>
+                <textarea class="form-control" rows="5" ng-model="description"></textarea>
+                 <br>
+            
+                <p>Do you like our service?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        YES
+                    </label>
                 </div>
-            </div>
+                <div class="form-check" ng-show="showNoBtn">
+                    <input ng-mouseover="showNoBtn=false;" class="form-check-input" type="radio" name="exampleRadios"
+                        id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        NO
+                    </label>
+                </div> <br>
+            
+                <p>
+                    <input class="btn btn-primary" type="submit" ng-click="showAnswer=true;"
+                    ng-disabled="myForm.email.$error.required && !myForm.description.$invalid">
+                    
+                </p>
+            </form>
+
+        <div ng-show="showAnswer==true">
+            <h3 class="text-center text-success">Your question is proccessing</h3>
         </div>
     </div>
 
@@ -174,32 +176,9 @@
         </div>
     </footer>
 
-    <div id="myModal" class="modal">
-    
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">&times;</span>
-            </div>
-            <div class="modal-body">
-                <h2 class="text-center text-uppercase font-weight-bold">Sign in</h2> <br>
-                <form ng-submit="signIn()">
-                    <h2 class="text-center">Login</h2>
-                    <input ng-model="inputLogin" class="form-control" type="text"> <br>
-
-                    <h2 class="text-center">Password</h2>
-                    <input ng-model="inputPass" class="form-control" type="password"> <br>
-
-                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Sign in"> <br>
-                    <input class="btn btn-danger btn-lg btn-block" type="reset" value="Reset"><br> <br>
-                </form>
-            </div>
-        </div>
-    
-    </div>
-
-    <script src="js/modalView.js"></script>
     <script src="js/myApp.js"></script>
-    <script src="js/productsCtrl.js"></script>
+    <script src="js/questionCtrl.js"></script>
+
 </body>
 
 </html>

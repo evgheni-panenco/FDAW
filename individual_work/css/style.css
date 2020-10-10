@@ -3,6 +3,16 @@
     box-sizing: border-box;
 } */
 
+.btn-editing {
+    border: 0;
+    background-color: white;
+}
+
+.btn-editing:disabled {
+    border: 0;
+    background-color: white;
+}
+
 .wrapper {
 		padding: 20px 0 10px 0;
 }
@@ -40,3 +50,79 @@ a:link{text-decoration:none;}
   text-decoration: none;
     
 }
+
+/* modal view */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myBtn {
+  padding: 12px 16px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  width: 180px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    border: 5px solid black;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.close {
+    color: black;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: white;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
