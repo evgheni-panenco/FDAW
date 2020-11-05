@@ -1,16 +1,43 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'v5.1.99',
-    'version' => '5.1.99.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
-    'name' => 'symfony/skeleton',
+    'reference' => 'f4dc69b4de868cc4737118757f37faac7f9ee368',
+    'name' => '__root__',
   ),
   'versions' => 
   array (
+    '__root__' => 
+    array (
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f4dc69b4de868cc4737118757f37faac7f9ee368',
+    ),
+    'doctrine/annotations' => 
+    array (
+      'pretty_version' => '1.11.1',
+      'version' => '1.11.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ce77a7ba1770462cd705a91a151b6c3746f9c6ad',
+    ),
+    'doctrine/lexer' => 
+    array (
+      'pretty_version' => '1.2.1',
+      'version' => '1.2.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e864bbf5904cb8f5bb334f99209b48018522f042',
+    ),
     'paragonie/random_compat' => 
     array (
       'replaced' => 
@@ -88,6 +115,15 @@
       array (
         0 => '1.0',
       ),
+    ),
+    'sensio/framework-extra-bundle' => 
+    array (
+      'pretty_version' => 'v5.6.1',
+      'version' => '5.6.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '430d14c01836b77c28092883d195a43ce413ee32',
     ),
     'symfony/cache' => 
     array (
@@ -367,15 +403,6 @@
       array (
         0 => '1.0',
       ),
-    ),
-    'symfony/skeleton' => 
-    array (
-      'pretty_version' => 'v5.1.99',
-      'version' => '5.1.99.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => NULL,
     ),
     'symfony/string' => 
     array (
