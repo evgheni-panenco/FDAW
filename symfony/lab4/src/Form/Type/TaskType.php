@@ -2,6 +2,7 @@
 
 namespace App\Form\Type;
 
+use App\Entity\Task;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -23,7 +24,7 @@ class TaskType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            // Configure your form options here
+            'data_class' => Task::class,
         ]);
     }
 }

@@ -20,53 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4219ee29-1302-48f4-9e16-e54680421acb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/success.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../composer.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../composer.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/lab4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab4.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/phpunit" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/dev/debug.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/mailer.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/notifier.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/test/validator.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/test/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/validator.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/LuckyController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/Type/TaskType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/Type/TaskType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/TaskRepository.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/default/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/name.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/number.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/new.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vendor/autoload.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../vendor/composer/ClassLoader.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../vendor/composer/InstalledVersions.php" beforeDir="false" />
@@ -1907,6 +1876,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kQcUpjuFOHHzaSFEa8swafSzT9" />
@@ -1919,6 +1889,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -1929,7 +1900,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605636273749</updated>
-      <workItem from="1605636274796" duration="1781000" />
+      <workItem from="1605636274796" duration="5726000" />
     </task>
     <servers />
   </component>
@@ -1946,5 +1917,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="65" key="SettingsEditor" timestamp="1605640959623">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="555" y="65" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1605640959623" />
+    <state x="814" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605641147112">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="814" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605641147112" />
   </component>
 </project>

@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Task;
 use App\Form\Type\TaskType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -15,17 +16,32 @@ class TaskController extends AbstractController
      *
      * @Route("/form")
      */
-    public function form(): Response
+    public function new(Request $request)
     {
         $task = new Task();
-        $task->setTitle('Shopping');
-        $task->setContent('Go to the store');
+
+        $task->setTitle('Title');
+        $task->setContent('Awesome content');
 
         $form = $this->createForm(TaskType::class, $task);
 
-        return $this->render('form.html.twig', [
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid())
+        {
+            $task = $form->getData();
+
+            return $this->redirectToRoute('task_success');
+        }
+
+        return $this->render('new.html.twig', [
             'form' => $form->createView(),
         ]);
+    }
 
+    /**
+     * @Route("/success", name="task_success")
+     */
+    public function successAction(){
+        return $this->render('success.html.twig');
     }
 }
