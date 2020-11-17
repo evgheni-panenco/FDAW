@@ -1,6 +1,7 @@
 <?php
 namespace App;
 
+// Awesome Greeting Generator
 class GreetingGenerator
 {
     public function getRandomGreeting()
