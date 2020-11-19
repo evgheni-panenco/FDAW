@@ -28,3 +28,5 @@ a55726,::1,GET,https://localhost:8000/lucky/number,1605170061,,200
 30f52a,::1,GET,https://localhost:8000/lucky/number,1605170088,,200
 bf4add,::1,GET,https://localhost:8000/lucky/number,1605170088,,200
 92631d,::1,GET,https://localhost:8000/lucky/number,1605170089,,200
+2678ee,::1,GET,https://localhost:8000/,1605783286,,404
+8496f6,::1,GET,https://localhost:8000/lucky/number,1605783300,,200

@@ -16,6 +16,6 @@ if (!\class_exists(App_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerRPCHms0\App_KernelDevDebugContainer([
     'container.build_hash' => 'RPCHms0',
-    'container.build_id' => '93546b9c',
-    'container.build_time' => 1605169922,
+    'container.build_id' => '18c3888f',
+    'container.build_time' => 1605783190,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerRPCHms0');
