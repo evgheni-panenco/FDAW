@@ -74,4 +74,26 @@ class ProductController extends AbstractController
             'id' => $product->getId()
         ]);
     }
+
+    /**
+     * @Route("/product/delete/{id}")
+     * @param int $id
+     * @return Response
+     */
+    public function delete(int $id): Response
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $product = $entityManager->getRepository(Product::class)->find($id);
+
+        if (!$product) {
+            throw $this->createNotFoundException(
+                'No product found for id '.$id
+            );
+        }
+
+        $entityManager->remove($product);
+        $entityManager->flush();
+
+        return new Response('Product with id - '. $product->getId() .' has been deleted ');
+    }
 }
