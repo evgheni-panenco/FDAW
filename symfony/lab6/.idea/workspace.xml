@@ -20,13 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad2c930a-915e-430b-865b-70fa0925d1e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../lab5/config/packages/test/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/config/packages/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/templates/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/lab6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab5/.idea/lab5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/.idea/lab5.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab5/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/.idea/php.xml" afterDir="false" />
@@ -34,8 +27,116 @@
       <change beforePath="$PROJECT_DIR$/../lab5/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab5/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab5/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/src/Controller/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab5/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../screenshots_lab1-4.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/installed.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/package-versions-deprecated/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/package-versions-deprecated/src/PackageVersions/Installer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-06a1931c73e2c1a3231a6efe69785628" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-16230ac245c786eea1139d01c94d7d04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-5274984c5aeba889b7dc71c2a8eb368d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-7b60a8172e7cd9b85e055d79e6a8e8da" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-7bfc11c78f1d77acddb48f908c5b74d3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-88ed29cd63e32d30de2b4b9e7590f216" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-980febc10b0953205ea678634faeb0d6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-a80bf17031b7b7db297acf27d39478b3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-b0e4b065d1514e5a06b1ff32b8d1740f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-b0f2392c8feb4bfaad22c018cc4dc64b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-db8d655f36a5d0bc38da75514a9c3417" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-e1daef74ed1039f9479dc8b79e93c456" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-e4ed05b9704dfd30a92a0acc2d1c963e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-f386eb1631697233d4696575e456938b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-fd1d77b1f6baae38e46923a43a9fe9ba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/composer/tmp-fdcc1943c64206d28406cfc4fcae255c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/annotations/.github/workflows/coding-standards.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/annotations/.github/workflows/static-analysis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/annotations/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/annotations/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/Annotation/Attributes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/Annotation/Enum.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/FileCacheReader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/ImplicitlyIgnoredAnnotationNames.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/PhpParser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/Reader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/annotations/phpstan.neon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/cache/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/cache/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/cache/lib/Doctrine/Common/Cache/ApcuCache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/cache/lib/Doctrine/Common/Cache/Cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/cache/lib/Doctrine/Common/Cache/ClearableCache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/cache/lib/Doctrine/Common/Cache/ExtMongoDBCache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/cache/lib/Doctrine/Common/Cache/FileCache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiDeleteCache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiGetCache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiPutCache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/cache/lib/Doctrine/Common/Cache/PredisCache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/collections/.doctrine-project.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/collections/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/collections/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/collections/docs/en/expression-builder.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/collections/docs/en/expressions.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/collections/docs/en/sidebar.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/collections/lib/Doctrine/Common/Collections/Expr/ClosureExpressionVisitor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/collections/lib/Doctrine/Common/Collections/Expr/Value.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/collections/lib/Doctrine/Common/Collections/ExpressionBuilder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/common/UPGRADE_TO_2_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/common/UPGRADE_TO_2_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/common/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/common/lib/Doctrine/Common/Proxy/Exception/InvalidArgumentException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/common/lib/Doctrine/Common/Proxy/Exception/ProxyException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/common/lib/Doctrine/Common/Proxy/Exception/UnexpectedValueException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/common/lib/Doctrine/Common/Proxy/ProxyDefinition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/event-manager/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/docs/en/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/lib/Doctrine/Inflector/CachedWordInflector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/lib/Doctrine/Inflector/Inflector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/lib/Doctrine/Inflector/InflectorFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/lib/Doctrine/Inflector/Language.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/lib/Doctrine/Inflector/LanguageInflectorFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/English/InflectorFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/English/Rules.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/NorwegianBokmal/Uninflected.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Patterns.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Portuguese/Inflectible.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Portuguese/InflectorFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Spanish/Inflectible.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Spanish/Rules.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Word.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/inflector/lib/Doctrine/Inflector/WordInflector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/instantiator/.doctrine-project.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/instantiator/.github/FUNDING.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/instantiator/.github/workflows/coding-standards.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/instantiator/.github/workflows/static-analysis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/instantiator/phpbench.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/instantiator/phpstan.neon.dist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/InvalidArgumentException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/lexer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/lexer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/.github/workflows/continuous-integration.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/.github/workflows/release-on-milestone-closed.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/UPGRADE-1.2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/lib/Doctrine/Persistence/ConnectionRegistry.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/lib/Doctrine/Persistence/Event/LifecycleEventArgs.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/lib/Doctrine/Persistence/Event/OnClearEventArgs.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/Driver/FileDriver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/Driver/StaticPHPDriver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/Driver/SymfonyFileLocator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/ReflectionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/lib/Doctrine/Persistence/NotifyPropertyChanged.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/lib/Doctrine/Persistence/ObjectManagerAware.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/lib/Doctrine/Persistence/ObjectManagerDecorator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/lib/Doctrine/Persistence/PropertyChangedListener.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/lib/Doctrine/Persistence/Proxy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/lib/Doctrine/Persistence/Reflection/RuntimePublicReflectionProperty.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vendor/doctrine/persistence/lib/Doctrine/Persistence/Reflection/TypedNoDefaultReflectionProperty.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +246,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606336862922</updated>
-      <workItem from="1606336863972" duration="674000" />
+      <workItem from="1606336863972" duration="2701000" />
     </task>
     <servers />
   </component>
