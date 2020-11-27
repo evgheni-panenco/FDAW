@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Samsung{% endblock %}
+
+{% block body %}
+    <h1>Welcome to Samsung Store</h1>
+
+    <input class="form-control" id="name" name="name" type="text"> <br>
+    <input class="btn btn-primary" onclick="send()" type="submit" value="Find by name">
+
+    <script>
+        function send() {
+            let name = document.getElementById("name").value;
+
+            let url = `http://localhost:8000/smartphone/${name}`;
+
+            window.location = url;
+        }
+    </script>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for smartphone in smartphones %}
+            <tr>
+                <td>{{ smartphone.id }}</td>
+                <td>{{ smartphone.name }}</td>
+                <td>{{ smartphone.price }}</td>
+                <td>
+                    <a href="{{ path('smartphone_show', {'id': smartphone.id}) }}">Details</a> |
+                    <a href="{{ path('smartphone_edit', {'id': smartphone.id}) }}">Update</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no smartphones found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a class="btn btn-success" href="{{ path('smartphone_new') }}">Add new smartphone</a>
+{% endblock %}
